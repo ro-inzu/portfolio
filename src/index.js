@@ -1,24 +1,23 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import Projects from './Projects.js';
+import Projects from './Portfolio.js';
 import Articles from './Articles.js';
 import About from './About.js';
-import Thumbnail from './Thumbnail'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './styles.css'
 
 class App extends Component{
     render(){
         return(
-            <BrowserRouter>
+            <BrowserRouter basename='/'>
              <div className="App">
-               <Route exact path="/" component={Projects} />
+               <Route exact path="/portfolio" component={Projects} />
                <Route path="/articles" component={Articles} />
                <Route path="/about" component={About} />
                <div>
                    <div className="navigation">
-
-                     <div className="navigation-sub"><Link to="/" className="item"></Link>
+                     <div className="navigation-sub">
+                            <Link to="/portfolio" className="item"></Link>
                             <Link to="/projects" className="item"></Link>
                             <Link to="/about" className="item"></Link>
                      </div>

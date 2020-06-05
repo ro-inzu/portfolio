@@ -2,12 +2,14 @@ import React from "react"
 import Thumbnail from './Thumbnail'
 import './styles.css';
 
-const Projects = (props) =>{
+const Portfolio = (props) =>{
     return(
         <div>
             <div className="mainContainer" >
+            <h1>Rosendo Inzunza </h1>
+            <p> Software Engineer</p>
                 <div className='mainContainer-img'>
-                    <img src = './roin1.png' />
+                    <img class ='roinImg' src={require('./images/roin1.png')} alt ='Img Not Found'/>
                 </div>
             </div>
             <div className="container-socials">
@@ -17,7 +19,6 @@ const Projects = (props) =>{
                           title="Linkedin"
                           icon = 'linkedin'
                       />
-
                       <Thumbnail
                           a="https://www.instagram.com/roroinzu"
                           title="Instagram"
@@ -34,4 +35,4 @@ const Projects = (props) =>{
     )
 }
 
-export default Projects;
+export default Portfolio;
