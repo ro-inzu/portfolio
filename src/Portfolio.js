@@ -6,8 +6,6 @@ const Portfolio = (props) =>{
     return(
         <div>
             <div className="mainContainer" >
-            <h1>Rosendo Inzunza </h1>
-            <p> Software Engineer</p>
                 <div className='mainContainer-img'>
                     <img class ='roinImg' src={require('./images/roin1.png')} alt ='Img Not Found'/>
                 </div>
