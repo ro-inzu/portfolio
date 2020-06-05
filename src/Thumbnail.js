@@ -14,7 +14,7 @@ const Thumbnail = (props) =>{
             <a href= {props.a} target ='_blank'>
               <div className="project-image">
                 <img src={props.image} alt=""/>
-                 <SocialMediaIconsReact backgroundColor ='white' iconColor = '#396fb4' size = '40' icon={props.icon} url={props.a} />
+                 <SocialMediaIconsReact backgroundColor ='' iconColor = '#396fb4' iconSize = {props.size} size = '50' icon={props.icon} url={props.a} borderWidth ='5'/>
               </div>
             </a>
         </motion.div>

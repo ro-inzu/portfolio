@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Projects from './Portfolio.js';
 import Articles from './Articles.js';
 import About from './About.js';
+import Example from './Example.js';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './styles.css'
 
@@ -14,6 +15,7 @@ class App extends Component{
                <Route exact path="/portfolio" component={Projects} />
                <Route path="/articles" component={Articles} />
                <Route path="/about" component={About} />
+               <Route path="/example" component={Example} />
                <div>
                    <div className="navigation">
                      <div className="navigation-sub">
@@ -24,7 +26,6 @@ class App extends Component{
                    </div>
 
                </div>
-
              </div>
            </BrowserRouter>
         )

@@ -1,8 +1,3 @@
-body {
-
-    /* height: 100%;
-    display: flex; */
-}
 
 h1 {
     font-family:Arial;
@@ -44,15 +39,31 @@ p{
     /* background-color: blue; */
     /* border-style: solid;
     border-color:blue; */
-    height: 100%;
-    width:100%;
+    height: auto;
+    width:auto;
     margin-top: 75px;
     text-align: center;
+}
+.mainContainer-mobile{
+    /* background-color: blue; */
+    /* border-style: solid;
+    border-color:blue; */
+    margin-top: 75px;
+    text-align: center;
+    max-width: 600px;
+}
+.mainContainer-img-mobile{
+    height:80%;
+    width:90%;
+    margin: 0 auto;
+    padding: 3px;
+    display: inline-block;
+    position: relative;
 }
 
 .mainContainer-img{
     width:50%;
-    height:20%;
+    height:30%;
     width:20%;
     margin: 0 auto;
     padding: 3px;
@@ -76,6 +87,7 @@ p{
 
 .soc-thumbnails {
     float: left;
+    padding: 5px;
 }
 
 /* ul {
