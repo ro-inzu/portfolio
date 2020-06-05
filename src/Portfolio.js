@@ -20,14 +20,14 @@ const Portfolio = (props) =>{
                           icon = 'linkedin'
                       />
                       <Thumbnail
-                          a="https://www.instagram.com/roroinzu"
-                          title="Instagram"
-                          icon = 'instagram'
-                      />
-                      <Thumbnail
                           a="https://www.github.com/roinzunza"
                           title="Github"
                           icon = 'github'
+                      />
+                      <Thumbnail
+                          a="https://www.instagram.com/roroinzu"
+                          title="Instagram"
+                          icon = 'instagram'
                       />
                   </div>
             </div>
