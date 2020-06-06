@@ -24,6 +24,11 @@ p{
     height:100%;
     width:100%;
 }
+img{
+    height:80%;
+    width:90%;
+}
+/*
 
 .roinImg:hover {
   height:100%;
@@ -34,7 +39,9 @@ p{
   -o-filter: blur(10px);
   -ms-filter: blur(10px);
   filter: blur(10px);
-}
+} */
+
+
 .mainContainer{
     /* background-color: blue; */
     /* border-style: solid;
@@ -52,13 +59,19 @@ p{
     text-align: center;
     max-width: 600px;
 }
+
 .mainContainer-img-mobile{
-    height:80%;
-    width:90%;
     margin: 0 auto;
     padding: 3px;
     display: inline-block;
     position: relative;
+
+}
+
+.mainContainer-img-mobile:Hover .overlay{
+    opacity: 1;
+
+
 }
 
 .mainContainer-img{
@@ -69,6 +82,9 @@ p{
     padding: 3px;
     display: inline-block;
     position: relative;
+}
+.mainContainer-img:Hover .overlay{
+    opacity: 1;
 }
 .container-socials{
     /* border-style: solid;
@@ -89,6 +105,76 @@ p{
     float: left;
     padding: 5px;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    word-wrap: break-word;
+
+    /* -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px); */
+}
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: red;
+
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.text {
+    /* Fallback: Set a background color. */
+    background-color: white;
+    /* Create the gradient. */
+    background-image: linear-gradient(45deg, #0242a3, #d6409f);
+    /* Set the background size and repeat properties. */
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+    color: white;
+    width: 300px;
+    font-style: Arial;
+    font-size: 12px;
+    font-weight: bold;
+
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    word-wrap: break-word;
+}
+
 
 /* ul {
   list-style-type: none;
